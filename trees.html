@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree Identification</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Zac Waite">
+    <meta name="keywords" content="Trees, Sustainable ,Orillia, Identification, Youth">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="#" target="_self">
+    <link rel="stylesheet" type="text/css" href="/src/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/src/trees.css" />
+  </head>
+
+  <body>
+    <header>
+      <script type="module" src="/src/header.js"></script>
+    </header>
+    <nav>
+      <script type="module" src="/src/nav.js"></script>
+    </nav>
+    <aside>
+      <script type="module" src="/src/aside.js"></script>
+    </aside>
+
+    <article>
+      <!--Section1-->
+      <div class="q s1 f0">
+        <p>Does the tree have leaves that change colour and drop in the winter?</p>
+        <div class="a" onclick="showHideS('f1', 'f2', 's1')">
+          <p>Yes</p>
+          <img class="deciduous" src="/images/deciduous.jpeg">
+        </div>
+        <div class="a" onclick="showHideS('f2', 'f1', 's1')">
+          <p>No</p>
+          <img class="coniferous" src="/images/coniferous.jpeg">
+        </div>
+      </div>
+
+      <!--Section 2-->
+      <div class="q s2 f1">
+        <p>It is deciduous! Are its leaves round?</p>
+        <div class="a" onclick="showHideS('f11', 'f12', 's2')">
+          <p>Yes, they are round</p>
+          <img class="roundLeaves" src="/images/roundLeaves.jpeg">
+        </div>
+        <div class="a" onclick="showHideS('f12', 'f11', 's2')">
+          <p>No, they are something else</p>
+          <img class="notRoundLeaves" src="/images/notRoundLeaves.jpeg">
+        </div>
+      </div>
+      <div class="q s2 f2">
+        <p>It is coniferous! Are its needles seperate from one another, or grouped?</p>
+        <div class="a" onclick="showHideS('f21', 'f22', 's2')">
+          <p> Seperate</p>
+          <img class="seperatedNeedles" src="/images/seperatedNeedles.jpeg">
+        </div>
+        <div class="a" onclick="showHideS('f22', 'f21', 's2')">
+          <p>Grouped</p>
+          <img class="groupedNeedles" src="/images/groupedNeedles.jpeg">
+        </div>
+      </div>
+
+      <!--Section 3-->
+      <div class="q s3 f11">
+        <div class="a" onclick="showHideS('f111', 'f112', 's3')">
+          <p> Section 3! Now this is Option i</p>
+        </div>
+        <div class="a" onclick="showHideS('f112', 'f111', 's3')">
+          <p>You picked Option 1A! Now this is Option ii</p>
+        </div>
+      </div>
+      <div class="q s3 f12">
+        <p>Interesting - Does the leaf look the Canadian Flag?</p>
+        <div class="a" onclick="showHideS('f121', 'f122', 's3')">
+          <p>Yes!</p>
+          <img class="mapleLeaf" src="/images/mapleLeaf.jpeg">
+        </div>
+        <div class="a" onclick="showHideS('f122', 'f121', 's3')">
+          <p>No</p>
+          <img class="oakLeaf" src="/images/oakLeaf.jpeg">
+        </div>
+      </div>
+      <div class="q s3 f21">
+        <div class="a" onclick="showHideS('f211', 'f212', 's3')">
+          <p> Section 3! Now this is Option i</p>
+        </div>
+        <div class="a" onclick="showHideS('f212', 'f211', 's3')">
+          <p>You picked Option 2A! Now this is Option ii</p>
+        </div>
+      </div>
+      <div class="q s3 f22">
+        <div class="a" onclick="showHideS('f221', 'f222', 's3')">
+          <p>Section 3! Now this is Option i</p>
+        </div>
+        <div class="a" onclick="showHideS('f222', 'f221', 's3')">
+          <p>You picked Option 2B! Now this is Option ii</p>
+        </div>
+      </div>
+
+      <!--Section 4-->
+      <div class="q s4 f111">
+        <div class="a">
+          <p> Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 1Ai! Now this is Option +</p>
+        </div>
+      </div>
+      <div class="q s4 f121">
+        <p>That is a Maple Tree!</p>
+        <img class="mapleTree" src="/images/mapleTree.jpeg">
+      </div>
+      <div class="q s4 f211">
+        <div class="a">
+          <p> Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 2Ai! Now this is Option +</p>
+        </div>
+      </div>
+      <div class="q s4 f221">
+        <div class="a">
+          <p>Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 2Bi! Now this is Option +</p>
+        </div>
+      </div>
+      <div class="q s4 f112">
+        <div class="a">
+          <p> Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 1Aii! Now this is Option +</p>
+        </div>
+      </div>
+      <div class="q s4 f122">
+        <div class="a">
+          <p>Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 1Bii! Now this is Option +</p>
+        </div>
+      </div>
+      <div class="q s4 f212">
+        <div class="a">
+          <p> Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 2Aii! Now this is Option +</p>
+        </div>
+      </div>
+      <div class="q s4 f222">
+        <div class="a">
+          <p>Section 4! Now this is Option -</p>
+        </div>
+        <div class="a">
+          <p>You picked Option 2Bii! Now this is Option +</p>
+        </div>
+      </div>
+
+      <div class="redo" onclick="Redo()">
+        <h1>Redo</h1>
+      </div>
+
+      <script>
+        sections = {
+          "s1": 1,
+          "s2": 2,
+          "s3": 3,
+          "s4": 4,
+          1: "s1",
+          2: "s2",
+          3: "s3",
+          4: "s4",
+        }
+        function showHideS(show, hide, sect){
+          var array = []
+          var i = 0
+          for (i = sections[sect]+1; i < 5; i++) {
+            array = document.getElementsByClassName(sections[i])
+            let a = 0
+            for (a = 0; a < array.length; a++) {
+              array[a].style.display = "none"
+            }
+          }
+          array = document.getElementsByClassName(show)
+          for (i = 0; i < array.length; i++) {
+            array[i].style.display = "block"
+          }
+          array = document.getElementsByClassName(hide)
+          for (i = 0; i < array.length; i++) {
+            array[i].style.display = "none"
+          }
+        }
+        function Redo(){
+          var array = document.getElementsByClassName("q")
+          var i = 0
+          for (i = 0; i < array.length; i++) {
+            array[i].style.display = "none"}
+          array = document.getElementsByClassName("s1")
+          for (i = 0; i < array.length; i++) {
+            array[i].style.display = "block"}
+        }
+      </script>
+    </article>
+
+    <footer>
+      <script type="module" src="/src/footer.js"></script>
+    </footer>
+  </body>
+</html>
