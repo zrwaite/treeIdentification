@@ -14,20 +14,20 @@
     <article>
       <!--Section1-->
       <div class="q s1 f0">
-        <p>Does the tree have leaves that change colour and drop in the winter?</p>
+        <h1>Does the tree have leaves that change colour and drop in the winter?</h1>
         <div class="a" onclick="showHideS('f1', 'f2', 's1')">
-          <p>Yes</p>
+          <p class="boxtext">Yes</p>
           <img class="deciduous" src="images/deciduous.jpeg">
         </div>
         <div class="a" onclick="showHideS('f2', 'f1', 's1')">
-          <p>No</p>
+          <p class="boxtext">No</p>
           <img class="coniferous" src="images/coniferous.jpeg">
         </div>
       </div>
 
       <!--Section 2-->
-      <div class="q s2 f1">
-        <p>It is deciduous! Are its leaves round?</p>
+      <div id="thing" class="q s2 f1">
+        <h1>It is deciduous! Are its leaves round?</h1>
         <div class="a" onclick="showHideS('f11', 'f12', 's2')">
           <p>Yes, they are round</p>
           <img class="roundLeaves" src="images/roundLeaves.jpeg">
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="q s2 f2">
-        <p>It is coniferous! Are its needles seperate from one another, or grouped?</p>
+        <h1>It is coniferous! Are its needles seperate from one another, or grouped?</h1>
         <div class="a" onclick="showHideS('f21', 'f22', 's2')">
           <p> Seperate</p>
           <img class="seperatedNeedles" src="images/seperatedNeedles.jpeg">
@@ -149,7 +149,7 @@
       </div>
 
       <div class="redo" onclick="Redo()">
-        <h1>Redo</h1>
+        <p class="redotext">Redo</p>
       </div>
 
       <script>
